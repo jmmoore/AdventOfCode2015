@@ -15,7 +15,7 @@ def ParenthesisInterpreter(file):
 
 # The commented lines complete part 2
                 #if floor == -1:
-                #    print("Hit the basement at position " + str(index))
+                #    print("First hit the basement at position " + str(index))
                 #    break
     return floor
     
