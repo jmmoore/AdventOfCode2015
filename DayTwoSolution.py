@@ -44,7 +44,6 @@ def allTogetherNow(listOfBoxes):
 # Execution
 
 inputFile = os.path.abspath("/Users/JMMoore/elfpaper")
-
 listOfBoxes = inputSanitizer(inputFile)
 result = allTogetherNow(listOfBoxes)
 print("The elves need " + str(result[0]) + " feet of paper and " + str(result[1]) + " feet of ribbon, accounting for slack and bows.")
