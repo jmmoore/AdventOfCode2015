@@ -29,6 +29,7 @@ def inputSanitizer(file):
         intBox = [int(i) for i in stringBox]
         orderedBox = sorted(intBox)
         listOfBoxes.append(orderedBox)
+    inputList.close()
     return listOfBoxes
     
 def allTogetherNow(listOfBoxes):

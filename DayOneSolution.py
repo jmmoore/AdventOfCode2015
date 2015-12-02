@@ -12,11 +12,8 @@ def ParenthesisInterpreter(file):
                 floor += 1
             elif char == ")":
                 floor -= 1
-
-# The commented lines complete part 2
-                #if floor == -1:
-                #    print("Hit the basement at position " + str(index) + "!")
-                #    break
+                if floor == -1:
+                    print("Hit first basement at position " + str(index) + "!")
     return floor
     
 #Execution
