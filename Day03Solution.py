@@ -5,6 +5,7 @@ import os
 
 def setUpMovementLists(file):
     movementList = list(open(file).read())
+# Slice operator [::2] outputs every other value.
     santaMovementList = movementList[::2]
     roboSantaMovementList = movementList[1::2]
     return movementList, santaMovementList, roboSantaMovementList
