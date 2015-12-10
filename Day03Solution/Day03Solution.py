@@ -34,7 +34,7 @@ def executeMovementList(movementList):
 
 # Execution
 
-inputFile = os.path.abspath("/Users/JMMoore/santaPath") 
+inputFile = os.path.abspath("./santaPath") 
 movementList, santaMovementList, roboSantaMovementList = setUpMovementLists(inputFile)
 
 #Part 1
