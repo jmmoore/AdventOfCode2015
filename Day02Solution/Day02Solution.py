@@ -20,9 +20,9 @@ def calculateRibbonNeeded(box):
     totalRibbon = ribbonMath + bowMath   
     return totalRibbon 
         
-def inputSanitizer(file):
+def inputSanitizer(inputFile):
     listOfBoxes = []
-    inputList = open(file).readlines()
+    inputList = open(inputFile).readlines()
     for line in inputList:
         cleanLine = line.strip('\n')
         stringBox = cleanLine.split("x")

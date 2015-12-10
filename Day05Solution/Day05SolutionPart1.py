@@ -5,18 +5,18 @@ import os
 def areThereEnoughVowels(string, array):
       vowelCount = 0
       for letter in string:   
-              if letter in array:
-                      vowelCount += 1
+          if letter in array:
+              vowelCount += 1
       if vowelCount < 3:
-              return False
+          return False
       else:
-              return True
+          return True
 
 def isArrayItemInString(string, array):
-        if any(substring in string for substring in array): 
-                return True
-        else:
-                return False
+    if any(substring in string for substring in array): 
+        return True
+    else:
+        return False
 
 # Execution
 
@@ -29,9 +29,9 @@ niceCounter = 0
 
 for item in inputList:
         if isArrayItemInString(item, naughtySubStrings):
-                continue
+            continue
         if areThereEnoughVowels(item, vowelSet):
-                if isArrayItemInString(item, doubleLetters):
-                        niceCounter += 1
+            if isArrayItemInString(item, doubleLetters):
+                niceCounter += 1
 
 print(niceCounter)

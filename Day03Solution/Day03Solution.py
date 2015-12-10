@@ -3,8 +3,8 @@
 import operator
 import os
 
-def setUpMovementLists(file):
-    movementList = list(open(file).read())
+def setUpMovementLists(inputFile):
+    movementList = list(open(inputFile).read())
 # Slice operator [::2] outputs every other value.
     santaMovementList = movementList[::2]
     roboSantaMovementList = movementList[1::2]

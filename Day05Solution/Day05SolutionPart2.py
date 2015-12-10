@@ -8,16 +8,16 @@ def checkForDuplicatePattern(string):
         a, b = 0, 2
         checkString = string[(a+i):(b+i)]
         if string.count(checkString) > 1 and len(checkString) > 1:
-                return True
-                i += 1
+            i += 1
+            return True
     return False
 
 def checkForSeparatedRepeats(string):
     for char in string:
         if char*2 in string[::2] or char*2 in string[1::2]:
-                return True
+            return True
         else:
-                continue
+            continue
     return False
 
 def countNiceStrings(inputFile):
