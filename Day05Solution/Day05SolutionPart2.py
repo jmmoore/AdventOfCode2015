@@ -26,7 +26,7 @@ def countNiceStrings(inputFile):
     for string in inputList:
         if checkForDuplicatePattern(string) and checkForSeparatedRepeats(string):
             niceCounter += 1
-            else:
+        else:
             continue
     return niceCounter
 
